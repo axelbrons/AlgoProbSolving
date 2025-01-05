@@ -1,7 +1,4 @@
-// Remove Element.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-#include <iostream>
+#include <stdio.h>
 
 int comp(const void* a, const void* b) {
     return *(int*)a - *(int*)b;
@@ -22,19 +19,10 @@ int removeElement(int* nums, int numsSize, int val) {
         }
     }
     qsort(nums, numsSize, sizeof(int), comp);
-    /*
-    for (int i = 0; i < numsSize; i++) {
-        printf("%d ,", nums[i]);
-    }
-    */
     
     return numsSize - k;
     
 }
-
-
-
-
 
 int main()
 {
