@@ -1,7 +1,4 @@
-// powerFunction.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-#include <iostream>
+#include <stdio.h>
 
 double myPow(double x, int n) {
     if (n > 0) {
